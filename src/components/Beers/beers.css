@@ -30,9 +30,20 @@
   color: #FFFFFF;
 }*/
 
+.image_url {
+  border-top: 1px solid #35A7FF;
+}
+
 .image_url img{
   height: 300px;
   width: 85px;
+  margin-top: 2rem;
+}
+
+.tagline,
+.food-pairing,
+.brewers-tips {
+  color: #FFFFFF;
 }
 
 /* beer details */

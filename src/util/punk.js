@@ -6,14 +6,13 @@ const Punk = {
     }).then(jsonResponse => {
       if(jsonResponse){
         return jsonResponse.map(beer => {
-          console.log(beer);
           return {
             id: beer.id,
             image_url: beer.image_url,
             name: beer.name,
             tagline: beer.tagline,
             description: beer.description,
-            food_pairing: beer.food_pairing,
+            food_pairing: beer.food_pairing.join(". "),
             brewers_tips: beer.brewers_tips
           }
         })
