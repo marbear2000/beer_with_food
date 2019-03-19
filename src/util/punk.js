@@ -4,7 +4,9 @@ const Punk = {
     return fetch(`https://api.punkapi.com/v2/beers?food=${query}`).then(response => {
       return response.json();
     }).then(jsonResponse => {
-      if(jsonResponse){
+      if(jsonResponse.value === ''){
+        alert('Stop')
+      } else if(jsonResponse){
         return jsonResponse.map(beer => {
           return {
             id: beer.id,
