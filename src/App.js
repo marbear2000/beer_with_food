@@ -27,7 +27,7 @@ class App extends Component {
       <div className="wrapper">
         <div className="banner">
           <div className="header">
-          <h1>BEERwithFOOD</h1>
+          <h1>BEER with FOOD</h1>
           </div>
 
           <div id="typed-strings">
